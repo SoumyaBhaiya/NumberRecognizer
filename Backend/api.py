@@ -6,13 +6,15 @@ from PIL import Image
 import io
 
 # Import your trained Net class
-from mnist_pytorch import Net  
+from mainFile import Net  
 
 app = FastAPI()
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 # Load trained model
 model = Net()
-model.load_state_dict(torch.load("mnist_model.pth", map_location=torch.device("cpu")))
+model.load_state_dict(torch.load("mnist_model.pth", map_location=torch.device(device)))
 model.eval()
 
 # Preprocessing (28x28 grayscale like MNIST)
