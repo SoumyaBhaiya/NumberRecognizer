@@ -1,0 +1,41 @@
+# =================
+# Android / Android Studio
+# =================
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# =================
+# Python
+# =================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+.venv
+venv/
+ENV/
+*.log
+
+# =================
+# OS files
+# =================
+Thumbs.db
